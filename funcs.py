@@ -62,15 +62,7 @@ def findWeights_FFD(d, length, threshold):
     
     return w
 
-"""Computes fractionally differenced series 
-    Args:
-        d: A float representing the differencing factor (any positive fractional)
-        series: A pandas dataframe with one or more columns of time-series values to be differenced
-        threshold: Threshold value past which we ignore weights 
-            (cutoff weight for window)
-    Returns: 
-        diff_series: A numpy array of differenced series by d. 
-"""
+
 def fracDiff(series, d, threshold = 1e-5):
 
     """Computes fractionally differenced series 
